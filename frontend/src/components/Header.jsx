@@ -37,18 +37,10 @@ const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-teal-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">SE</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-lg font-semibold text-slate-800 leading-tight">
-                {companyInfo.name}
-              </h1>
-              <p className="text-xs text-slate-500">Corporate Travel</p>
-            </div>
+            <img src="/logo.png" alt="Sun Enterprises" className="h-16 lg:h-24 w-auto object-contain" />
           </Link>
 
           {/* Desktop Navigation */}

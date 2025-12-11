@@ -15,7 +15,7 @@ const Footer = () => {
               {/* <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-teal-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">SE</span>
               </div> */}
-              <img src="/logo.png" alt="Sun Enterprises" className="h-16 lg:h-24 w-auto object-contain" /> 
+              <img src="/logo.png" alt="Sun Enterprises" className="h-28 lg:h-32 w-auto object-contain" /> 
             
             </div>
             <p className="text-sm text-slate-400 mb-4 leading-relaxed">

@@ -111,7 +111,7 @@ export const fleet = [
     capacity: "12 Seater",
     features: ["AC", "Push-back Seats", "PA System", "Luggage Compartment"],
     ideal: "Team outings, corporate events",
-    image: "/vehicles/tempo.png",
+    image: "/vehicles/Tempo.png",
   },
 ];
 

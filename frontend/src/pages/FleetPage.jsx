@@ -71,7 +71,7 @@ const FleetPage = () => {
                     className="relative z-0 h-[100%] w-[100%] object-cover transition-[transform,filter] duration-[400ms] ease-in-out filter group-hover:translate-x-3 group-hover:scale-105 group-hover:[filter:brightness(1.08)]"
                     style={{ willChange: "transform" }}
                   />
-                </div>
+                  </div>
                 <CardContent className="p-6 bg-white">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-slate-800">
@@ -84,12 +84,12 @@ const FleetPage = () => {
                       </span>
                     </div>
                   </div>
-
+                  
                   <p className="text-slate-500 text-sm mb-4">
                     <span className="font-medium">Ideal for:</span>{" "}
                     {vehicle.ideal}
                   </p>
-
+                  
                   <div className="border-t border-slate-100 pt-4">
                     <p className="text-sm text-slate-600 mb-3 font-medium">
                       Features:
@@ -127,7 +127,7 @@ const FleetPage = () => {
               What You Can Expect
             </h2>
           </div>
-
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
@@ -184,7 +184,7 @@ const FleetPage = () => {
               Choose the Right Vehicle
             </h2>
           </div>
-
+          
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>

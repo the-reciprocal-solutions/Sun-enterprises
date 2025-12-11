@@ -12,13 +12,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-teal-500 rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-gradient-to-br from-sky-500 to-teal-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">SE</span>
-              </div>
-              <div>
-                <h3 className="text-white font-semibold">{companyInfo.name}</h3>
-                <p className="text-xs text-slate-400">Corporate Travel</p>
-              </div>
+              </div> */}
+              <img src="/logo.png" alt="Sun Enterprises" className="h-16 lg:h-24 w-auto object-contain" /> 
+            
             </div>
             <p className="text-sm text-slate-400 mb-4 leading-relaxed">
               {companyInfo.description}

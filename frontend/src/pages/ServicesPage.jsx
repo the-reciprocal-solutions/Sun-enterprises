@@ -120,7 +120,7 @@ const ServicesPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 lg:order-1">
               <img
-                src="https://images.pexels.com/photos/837129/pexels-photo-837129.jpeg?w=800"
+                src="/fleet.png"
                 alt="Employee Transportation"
                 className="rounded-2xl shadow-xl w-full h-80 object-cover"
               />

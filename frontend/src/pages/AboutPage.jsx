@@ -54,7 +54,7 @@ const AboutPage = () => {
               <img
                 src="/about.png"
                 alt="Professional Chauffeur"
-                className="rounded-2xl shadow-2xl w-full h-96 object-cover object-left transform -translate-x-2 sm:-translate-x-3 lg:-translate-x-4"
+                className="rounded-2xl shadow-2xl w-full max-h-[420px] object-cover object-center sm:object-left transform sm:-translate-x-1 md:-translate-x-2 lg:-translate-x-3"
               />
             </div>
           </div>
@@ -205,7 +205,7 @@ const AboutPage = () => {
               <img
                 src="/about1.png"
                 alt="Luxury Fleet"
-                className="rounded-2xl shadow-xl w-full h-96 object-cover object-left transform -translate-x-2 sm:-translate-x-3 lg:-translate-x-4"
+                className="rounded-2xl shadow-xl w-full max-h-[420px] object-cover object-center sm:object-left transform sm:-translate-x-1 md:-translate-x-2 lg:-translate-x-3"
               />
             </div>
           </div>

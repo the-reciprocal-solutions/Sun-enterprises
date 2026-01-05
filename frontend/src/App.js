@@ -23,6 +23,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
+        <br /><br />
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />

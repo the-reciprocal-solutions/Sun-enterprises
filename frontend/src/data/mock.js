@@ -1,7 +1,7 @@
-// Mock data for Sun Enterprises Corporate Travel Services
+// Mock data for Metro Transport Corporate Travel Services
 
 export const companyInfo = {
-  name: "Sun Enterprises",
+  name: "Metro Transport",
   tagline: "Corporate Travel Excellence",
   description:
     "Premier corporate cab services for MNCs and businesses in Chennai. Reliable, professional, and punctual transportation solutions.",
@@ -172,7 +172,7 @@ export const testimonials = [
     name: "Rajesh Kumar",
     designation: "HR Manager, TCS Chennai",
     content:
-      "Sun Enterprises has been our trusted partner for employee transportation for over 3 years. Their reliability and professionalism is unmatched.",
+      "Metro Transport has been our trusted partner for employee transportation for over 3 years. Their reliability and professionalism is unmatched.",
     rating: 5,
   },
   {
@@ -188,7 +188,7 @@ export const testimonials = [
     name: "Suresh Balaji",
     designation: "Operations Director, Cognizant",
     content:
-      "We've been using Sun Enterprises for our executive airport transfers. Professional drivers and well-maintained vehicles every time.",
+      "We've been using Metro Transport for our executive airport transfers. Professional drivers and well-maintained vehicles every time.",
     rating: 5,
   },
 ];

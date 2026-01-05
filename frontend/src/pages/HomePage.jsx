@@ -306,7 +306,7 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="inline-block text-sky-400 font-medium text-sm tracking-wide uppercase mb-3">
-              Why Sun Enterprises
+              Why Metro Transport
             </span>
             <h2
               className="text-3xl lg:text-4xl font-bold mb-4"

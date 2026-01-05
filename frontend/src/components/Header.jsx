@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X } from 'lucide-react';
-import { Button } from './ui/button';
-import { companyInfo } from '../data/mock';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Phone, Menu, X } from "lucide-react";
+import { Button } from "./ui/button";
+import { companyInfo } from "../data/mock";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,17 +13,17 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Fleet', path: '/fleet' },
-    { name: 'Packages', path: '/packages' },
-    { name: 'Contact', path: '/contact' },
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Fleet", path: "/fleet" },
+    { name: "Packages", path: "/packages" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -32,17 +32,20 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-lg'
-          : 'bg-white/80 backdrop-blur-sm'
+          ? "bg-white/95 backdrop-blur-md shadow-lg"
+          : "bg-white/80 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-28">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/logo.png" alt="Sun Enterprises" className="h-24 lg:h-28 w-auto object-contain" />
+            <img
+              src="/logo1.png"
+              alt="Metro Transport"
+              className="h-32 lg:h-34 w-auto object-contain"
+            />
           </Link>
-
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
@@ -51,8 +54,8 @@ const Header = () => {
                 to={link.path}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
                   isActive(link.path)
-                    ? 'text-sky-600 bg-sky-50'
-                    : 'text-slate-600 hover:text-sky-600 hover:bg-slate-50'
+                    ? "text-sky-600 bg-sky-50"
+                    : "text-slate-600 hover:text-sky-600 hover:bg-slate-50"
                 }`}
               >
                 {link.name}
@@ -74,7 +77,11 @@ const Header = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2 text-slate-600 hover:text-sky-600 hover:bg-slate-100 rounded-lg transition-colors"
             >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -90,8 +97,8 @@ const Header = () => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                     isActive(link.path)
-                      ? 'text-sky-600 bg-sky-50'
-                      : 'text-slate-600 hover:text-sky-600 hover:bg-slate-50'
+                      ? "text-sky-600 bg-sky-50"
+                      : "text-slate-600 hover:text-sky-600 hover:bg-slate-50"
                   }`}
                 >
                   {link.name}

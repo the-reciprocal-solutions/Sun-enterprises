@@ -22,6 +22,7 @@ import {
 } from "../components/ui/select";
 import { companyInfo, fleet } from "../data/mock";
 import { toast } from "sonner";
+import { sendContactEmail } from "../services/mail";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -49,42 +50,32 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (save to localStorage for demo)
-    setTimeout(() => {
-      const existingQuotes = JSON.parse(
-        localStorage.getItem("metroTransportQuotes") || "[]"
-      );
-      const newQuote = {
-        ...formData,
-        id: Date.now(),
-        submittedAt: new Date().toISOString(),
-      };
-      existingQuotes.push(newQuote);
-      localStorage.setItem(
-        "metroTransportQuotes",
-        JSON.stringify(existingQuotes)
-      );
-
-      setIsSubmitting(false);
+    try {
+      await sendContactEmail(formData);
       setIsSubmitted(true);
       toast.success(
         "Quote request submitted successfully! We will contact you shortly."
       );
 
-      // Reset form after 3 seconds
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        vehicleType: "",
+        serviceType: "",
+        message: "",
+      });
+
       setTimeout(() => {
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          company: "",
-          vehicleType: "",
-          serviceType: "",
-          message: "",
-        });
         setIsSubmitted(false);
       }, 3000);
-    }, 1500);
+    } catch (error) {
+      console.error("Failed to submit quote request", error);
+      toast.error("Failed to send your request. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

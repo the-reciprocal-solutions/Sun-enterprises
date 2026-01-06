@@ -8,6 +8,7 @@ export const companyInfo = {
   landline: "+914445867657",
   mobile: ["9600616613", "8072747751"],
   email: "suncabs2023@gmail.com",
+// email: "iyappansp.trs@gmail.com",
   address: "No 18, Swami Nagar, Kolathur, Chennai - 600099",
   gst: "33AFHFS3256C1Z8",
   whatsapp: "919600616613",

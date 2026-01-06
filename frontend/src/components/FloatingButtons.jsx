@@ -4,7 +4,7 @@ import { companyInfo } from '../data/mock';
 
 const FloatingButtons = () => {
   const handleWhatsApp = () => {
-    const message = encodeURIComponent('Hello! I would like to enquire about your corporate cab services.');
+    const message = encodeURIComponent('Hello! I would like to enquire about your Metro Transport services.');
     window.open(`https://wa.me/${companyInfo.whatsapp}?text=${message}`, '_blank');
   };
 
